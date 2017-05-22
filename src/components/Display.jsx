@@ -5,9 +5,9 @@ import FontIcon from 'material-ui/FontIcon';
 import SwipeableViews from 'react-swipeable-views';
 
 //pages
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
+import {Home} from './pages/Home';
+import {Projects} from './pages/Projects';
+import {Contact} from './pages/Contact';
 
 //icons
 import ActionHome from 'material-ui/svg-icons/action/home';
@@ -57,4 +57,4 @@ const Display = (props) => (
 </div>
 );
 
-export default Display;
+export {Display};

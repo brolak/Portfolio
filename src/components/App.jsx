@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
-import NavBar from './NavBar';
-import Display from './Display';
+import {NavBar} from './NavBar.jsx';
+import {Display} from './Display.jsx';
 
-import injectTapEventPlugin from 'react-tap-event-plugin';
-injectTapEventPlugin();
-
-export default class App extends Component {
+class App extends Component {
     //begin at home slide index
     constructor(props) {
     	super(props);
@@ -32,4 +29,6 @@ export default class App extends Component {
         );
     }
 }
+
+export {App};
 

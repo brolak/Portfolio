@@ -76,4 +76,4 @@ const Projects = () => (
   </Paper>
 );
 
-export default Projects;
+export {Projects};

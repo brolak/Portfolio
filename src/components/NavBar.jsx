@@ -2,7 +2,7 @@ import React from 'react';
 import AppBar from 'material-ui/AppBar';
 import FontIcon from 'material-ui/FontIcon';
 import IconButton from 'material-ui/IconButton';
-import GitHubIcon from './subcomponents/GitHubIcon';
+import {GitHubIcon} from './subcomponents/GitHubIcon';
 
 //tab index converted to title on app bar
 const indexToTitle = (value) => {
@@ -29,5 +29,5 @@ const NavBar = (props) => (
 	/>
 );
 
-export default NavBar;
+export {NavBar};
 

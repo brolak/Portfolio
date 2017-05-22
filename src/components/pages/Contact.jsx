@@ -16,4 +16,4 @@ const Contact = () => (
 	</Paper>
 );
 
-export default Contact;
+export {Contact};

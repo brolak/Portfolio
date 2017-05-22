@@ -1,9 +1,7 @@
 .DS_STORE
 *.log
-
+output
 node_modules
-
 dist
 coverage
-
 .idea/
