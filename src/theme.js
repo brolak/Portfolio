@@ -9,7 +9,7 @@ import spacing from 'material-ui/styles/spacing';
 
 const theme = getMuiTheme({
   spacing: spacing,
-  fontFamily: 'Montserrat, sans-serif',
+  fontFamily: 'Roboto, sans-serif',
   palette: {
     primary1Color: deepOrange900,
     primary2Color: amber700,

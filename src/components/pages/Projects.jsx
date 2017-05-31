@@ -16,7 +16,9 @@ const styles = {
     justifyContent: 'space-around',
   },
   gridList: {
-    width: '100%',
+    width: '76%',
+    marginLeft: '12%',
+    marginRight: '12%',
     height: '100%',
     overflowY: 'auto',
   },
@@ -27,38 +29,31 @@ const styles = {
     height: 440,
     width: '95%',
     margin: '2.5%',
-    // textAlign: 'center',
     display: 'inline-block',
   }
 };
 
-//project images
-const notifyImg = require('../../img/notify-me.png');
-const movieImg = require('../../img/movie-links.png');
-const beerImg = require('../../img/beer_logos.gif');
-const pomImg = require('../../img/pomodoro.png');
-
 const projectData = [
   {
-    img: notifyImg,
+    img: require('../../img/notify-me.png'),
     title: 'Notify-Me',
     github: 'https://github.com/brolak/zenext',
     sub: 'A chrome-extension for advanced Zendesk notifications'
   },
   {
-    img: movieImg,
+    img: require('../../img/movie-links.png'),
     title: 'Movie Links',
     github: 'https://github.com/brolak/MovieLink',
     sub: 'Interactive movie cast/credit linking social game',
   },
   {
-    img: beerImg,
+    img: require('../../img/beer_logos.gif'),
     title: 'The Beer List',
     github: 'https://github.com/brolak/beerlist-angular-start',
     sub: 'A full-stack beer database/API project with user authentication',
   },
   {
-    img: pomImg,
+    img: require('../../img/pomodoro.png'),
     title: 'Pomodoro Clock',
     github: 'https://github.com/brolak/react-clock',
     sub: 'A simple pomodoro clock, with embedded youtube video',
@@ -68,7 +63,7 @@ const projectData = [
 const Projects = (props) => (
   <Paper style={styles.paper} zDepth={2}>
    
-      <GridList style={styles.gridList} cols={2} cellHeight={300}>
+      <GridList style={styles.gridList} cols={1} cellHeight={300}>
         {projectData.map((tile) => (
           <GridTile
             key={tile.img}
@@ -76,7 +71,7 @@ const Projects = (props) => (
             subtitle={tile.sub}
             actionIcon={<GitHubIcon link={tile.github} />}
             titleStyle={styles.title}
-            titleBackground="linear-gradient(to top, #BF360C 0%,#BF360C 70%,rgba(0,0,0,0) 100%)"
+            titleBackground="#BF360C"
           >
             <img src={tile.img} />
           </GridTile>

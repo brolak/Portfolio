@@ -16,16 +16,19 @@ import SocialPerson from 'material-ui/svg-icons/social/person';
 
 const pages = [
 	{
+		label: 'HOME',
 		component: <Home />, 
 		icon: <ActionHome />,
 		value: 0
 	},
 	{
+		label: 'PROJECTS',
 		component: <Projects />,
 		icon: <NavigationApps />,
 		value: 1
 	},
 	{
+		label: 'CONTACT',
 		component: <Contact />,
 		icon: <SocialPerson />,
 		value: 2
@@ -33,7 +36,7 @@ const pages = [
 ]
 
 const tabs = () => (
-	pages.map((page) => <Tab key={page.value} icon={page.icon} value={page.value} />)
+	pages.map((page) => <Tab key={page.value} icon={page.icon} value={page.value} label={page.label} />)
 )
 
 const views = () => (

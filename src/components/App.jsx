@@ -7,7 +7,7 @@ class App extends Component {
     constructor(props) {
     	super(props);
     	this.state = {
-            slideIndex: 1
+            slideIndex: 0
     	}
         this.handleSlide = this.handleSlide.bind(this);
   	}

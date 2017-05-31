@@ -28,7 +28,7 @@ const Home = () => (
     <Card style={style.card}>
       <CardTitle title="Mati Borlak" subtitle="Full Stack Developer"/>
       <CardText>
-        Loremly yo stuff ipss quis lacus id, pellentesque lobortis odio.
+        "Believe you can and you're halfway there." --Theodore Roosevelt
       </CardText>
       <CardActions>
       </CardActions>

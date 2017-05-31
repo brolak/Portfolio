@@ -14,34 +14,26 @@ const styles = {
   },
 };
 
-//images for chip avatars
-const mongoImg = require('../../img/mongo.png');
-const angularImg = require('../../img/angular.png');
-const nodeImg = require('../../img/node.png');
-const reactImg = require('../../img/react.svg');
-const chromeImg = require('../../img/chrome.png');
-const zendeskImg = require('../../img/zendesk.png');
-
 //function for adding avatar image based on chip name
 var chipImage = function (value) {
   switch(value) {
     case 'MongoDB':
-        return mongoImg;
+        return require('../../img/mongo.png');
         break;
     case 'AngularJS':
-        return angularImg;
+        return require('../../img/angular.png');
         break;
     case 'Node/Express':
-        return nodeImg
+        return require('../../img/node.png');
         break;
     case 'ReactJS':
-        return reactImg;
+        return require('../../img/react.svg');
         break;
     case 'Google Chrome':
-        return chromeImg;
+        return require('../../img/chrome.png');
         break;
     case 'Zendesk API':
-        return zendeskImg;
+        return require('../../img/zendesk.png');
         break;
     }
 }
