@@ -17,15 +17,16 @@ const indexToTitle = (value) => {
         return "Contact"
         break;
     }
-} 
+}
+
 
 //top bar displaying title (also menu?)
 const NavBar = (props) => (
 	<AppBar
 	    		title={indexToTitle(props.slideIndex)}
-	    		showMenuIconButton = {false}
+                showMenuIconButton = {false}
 	    		zDepth = {0}
-	    		iconElementRight={<GitHubIcon />}
+	    		iconElementRight={<GitHubIcon link='https://github.com/brolak/Portfolio'/>}
 	/>
 );
 

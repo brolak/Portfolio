@@ -21,10 +21,10 @@ const GitHubSVG = (props) => (
   </SvgIcon>
 );
 
-const GitHubIcon = () => (
+const GitHubIcon = (props) => (
 	<IconButton iconStyle={styles.smallIcon}
       			style={styles.small}
-      			href='https://github.com/brolak/Portfolio'>
+      			href={props.link}>
       <GitHubSVG />
     </IconButton>
 )

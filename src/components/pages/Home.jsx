@@ -5,7 +5,7 @@ import Paper from 'material-ui/Paper';
 
 const style = {
   paper:{
-    height: 600,
+    height: 440,
     width: '95%',
     margin: '2.5%',
     textAlign: 'center',
@@ -14,16 +14,16 @@ const style = {
   },
   card: {
     width: '80%',
-    height: 280,
+    height: 150,
     textAlign: 'center',
     margin: 'auto'
   }
 }
 
 const Home = () => (
-  <Paper style={style.paper} zDepth={1} >
+  <Paper style={style.paper} zDepth={2} >
     <div className="avatar">
-      <MyAvatar size={250}/>
+      <MyAvatar size={200}/>
     </div>
     <Card style={style.card}>
       <CardTitle title="Mati Borlak" subtitle="Full Stack Developer"/>
