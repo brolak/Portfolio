@@ -11,8 +11,8 @@ const style = {
 	paper: {
   		height: 440,
   		width: '95%',
-  		margin: '2.5%',
-  		// textAlign: 'center',
+  		margin: '2%',
+  		textAlign: 'center',
   		display: 'inline-block',
 	},
 	list:{
@@ -33,16 +33,19 @@ const gmail = require('../../img/gmail.png');
 const linkedIn = require('../../img/linkedin.png');
 const gitHub = require('../../img/github.png');
 const fcc = require('../../img/fcc.png');
-const stackO = require('../../img/stackoverflow.png');
+const resume = require('../../img/resume.svg');
 
 const Contact = () => (
-	<Paper style={style.paper} zDepth={2} >
+	<Paper style={style.paper} zDepth={3} >
     		<List style={style.list}>
     			<Subheader inset={true}>Links</Subheader>
     			<Divider />
     			<ListItem 
     			primaryText={<a href="https://www.linkedin.com/in/mati-borlak-1b9247135/">LinkedIn</a>}
-    			leftAvatar={<Avatar src={require('../../img/linkedin.png')} />} />
+    			leftAvatar={<Avatar 
+    				src={require('../../img/linkedin.png')} 
+    				backgroundColor='#0D77B7'
+    			/>} />
 		      	<Divider />
 		      	<ListItem 
 		      		primaryText={<a href="https://github.com/brolak">Github</a>} 
@@ -60,9 +63,11 @@ const Contact = () => (
     			href='' />} />
 		      	<Divider />
 		      	<ListItem 
-    			primaryText={<a href="https://stackoverflow.com/users/7435189/brolak">Stack Overflow</a>} 
-    			leftAvatar={<Avatar src={stackO} 
-    			href='' />} />
+    			primaryText={<a href="https://drive.google.com/open?id=0B0OEdnNcOH4xdVZ0aE1TT1lVaGs">Resume/CV</a>} 
+    			leftAvatar={<Avatar
+    				backgroundColor='#FFA000'
+    				src={resume} 
+    			 />} />
 		      	<Divider />
     		</List>
     		

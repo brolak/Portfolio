@@ -35,6 +35,13 @@ module.exports = {
                 'file-loader?name=images/[name].[ext]',
                 'image-webpack-loader'
                 ]
+            },
+            {
+                test: /\.pdf/,
+                use: [
+                "file-loader?name=docs/[name].[ext]",
+                'file-loader'
+                ]
             }
         ]
     },

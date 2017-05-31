@@ -20,6 +20,7 @@ const styles = {
     marginLeft: '12%',
     marginRight: '12%',
     height: '100%',
+    textAlign: 'center',
     overflowY: 'auto',
   },
   title: {
@@ -28,7 +29,7 @@ const styles = {
   paper: {
     height: 440,
     width: '95%',
-    margin: '2.5%',
+    margin: '2%',
     display: 'inline-block',
   }
 };
@@ -56,12 +57,12 @@ const projectData = [
     img: require('../../img/pomodoro.png'),
     title: 'Pomodoro Clock',
     github: 'https://github.com/brolak/react-clock',
-    sub: 'A simple pomodoro clock, with embedded youtube video',
+    sub: 'A pomodoro time with an embedded youtube video',
   },
 ];
 
 const Projects = (props) => (
-  <Paper style={styles.paper} zDepth={2}>
+  <Paper style={styles.paper} zDepth={3}>
    
       <GridList style={styles.gridList} cols={1} cellHeight={300}>
         {projectData.map((tile) => (
